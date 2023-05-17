@@ -1,1 +1,1 @@
-{"version":3,"sources":["../goit-markup-hw-07/main.scss"],"names":[],"mappings":"AAAA,KACE,SAAA","file":"main.min.css"}
+{"version":3,"sources":["../sass/components/navigation.scss"],"names":[],"mappings":"AAAA,MACE,UAAA,CACA,aACE,UAAA,CAEF,YACE,WAAA,CACA,UAAA","file":"main.min.css"}

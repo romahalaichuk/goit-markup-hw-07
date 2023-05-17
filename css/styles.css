@@ -8,7 +8,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--main-color);
+  color: var(--dark-black);
 }
 h1,
 h2,
@@ -39,7 +39,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: var(--white);
   margin-bottom: 30px;
 }
 :focus {
@@ -55,24 +55,20 @@ h1 {
 /* hero hover button color   #188CE8  */
 
 :root {
-  --icon-color: #afb1bb;
-  --main-color: #212121;
-  --sub-text-color: rgba(255, 255, 255, 0.6);
+  --slightly-grey: #afb1bb;
+  --dark-black: #212121;
   --sub-font-size: 16px;
-  --main-background-color: #ffffff;
-  --focus-hover-background-color: #2196f3;
-  --focus-hover-color-button: #ffffff;
-  --focus-hover-color-text: #2196f3;
-  --active-color: #2196f3;
-  --adress-g: #757575;
+  --white: #ffffff;
+  --blue: #2196f3;
+  --grey: #757575;
   --black: #000000;
-  --button-focus: #188ce8;
-  --mu-hero: #2f303a;
-  --team-backgraund: #f5f4fa;
-  --border: #ececec;
-  --border-portfolio: #eeeeee;
-  --modal-background: rgba(0, 0, 0, 0.2);
-  --newsletter-color-font: rgba(255, 255, 255, 0.6);
+  --light-blue: #188ce8;
+  --dark-navy-blue: #2f303a;
+  --light-cream: #f5f4fa;
+  --dark-cream: #ececec;
+  --creamy: #eeeeee;
+  --light-black: rgba(0, 0, 0, 0.2);
+  --light-grey: rgba(255, 255, 255, 0.6);
   --newsletter-border: rgba(255, 255, 255, 0.302);
   --shadow-teamat: rgba(0, 0, 0, 0.25);
   --transition-active: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,7 +113,7 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 20px 24px;
-  border: 1px solid var(--border-portfolio);
+  border: 1px solid var(--creamy);
   border-top: none;
 }
 .container-nav {
@@ -137,10 +133,10 @@ h1 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon-link:hover use {
-  fill: var(--active-color);
+  fill: var(--blue);
 }
 .header-icon-link:focus use {
-  fill: var(--active-color);
+  fill: var(--blue);
 }
 .header-contact-item-o {
   display: block;
@@ -158,9 +154,9 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
-  color: var(--main-color);
+  color: var(--dark-black);
   font-size: var(--main-font-size);
-  background-color: var(--main-background-color);
+  background-color: var(--white);
 }
 .hero-container {
   max-width: 1200px;
@@ -170,7 +166,7 @@ body {
   align-items: center;
 }
 .header {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--dark-cream);
 }
 .container {
   width: 1200px;
@@ -182,7 +178,7 @@ body {
   padding-bottom: 94px;
 }
 .wite {
-  color: var(--main-background-color);
+  color: var(--white);
   font-family: "Raleway";
   font-style: normal;
   line-height: 1.19;
@@ -191,11 +187,11 @@ body {
 .logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
-  color: var(--active-color);
+  color: var(--blue);
   line-height: 1.19;
   letter-spacing: 0.02em;
 }
-.logo-black {
+.logo-header {
   color: var(--black);
   font-family: "Raleway";
   font-style: normal;
@@ -220,12 +216,12 @@ body {
 }
 
 .navbar-link:focus {
-  color: var(--focus-hover-color-text);
+  color: var(--blue);
 }
 .nav-g:focus,
 .address-w:focus,
 .contacts:focus {
-  color: var(--active-color);
+  color: var(--blue);
 }
 .current-link:focus,
 .current-link:hover,
@@ -233,7 +229,7 @@ body {
 .header-contact-link:focus,
 .navbar-contact-link:hover,
 .header-contact-link:hover {
-  color: var(--focus-hover-color-text);
+  color: var(--blue);
 }
 
 .navbar-link {
@@ -249,7 +245,7 @@ body {
 
 .navbar-link:hover,
 .contacts:hover {
-  color: var(--focus-hover-color-text);
+  color: var(--blue);
 }
 *,
 *::before,
@@ -260,7 +256,7 @@ body {
 }
 .navbar-linkss {
   position: relative;
-  color: var(--active-color);
+  color: var(--blue);
 }
 
 .navbar-linkss::after {
@@ -269,7 +265,7 @@ body {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: var(--active-color);
+  background-color: var(--blue);
   border-radius: 2px;
   bottom: 0;
 }
@@ -280,7 +276,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: var(--white);
   position: absolute;
 
   padding-top: 27px;
@@ -293,47 +289,47 @@ body {
   background: rgba(47, 48, 58, 0.8);
 }
 .hero-button:focus {
-  background-color: var(--button-focus);
+  background-color: var(--light-blue);
 }
 
 .hero-button:hover {
-  background-color: var(--button-focus);
+  background-color: var(--light-blue);
 }
 
 .filter-button:focus {
-  background-color: var(--focus-hover-background-color);
+  background-color: var(--blue);
 }
 
 .filter-button:hover {
-  background-color: var(--focus-hover-background-color);
+  background-color: var(--blue);
 }
 .filter-current {
-  background-color: var(--focus-hover-background-color);
-  color: var(--focus-hover-color-button);
+  background-color: var(--blue);
+  color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-button:focus,
 .filter-button:hover {
-  background-color: var(--focus-hover-background-color);
+  background-color: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .address:focus,
 .filter-button:focus {
-  color: var(--focus-hover-color-button);
+  color: var(--white);
 }
 
 .address:hover,
 .address-w:hover {
-  color: var(--active-color);
+  color: var(--blue);
 }
 .filter-button:hover {
-  color: var(--focus-hover-color-button);
+  color: var(--white);
 }
 .backdrop {
-  background: var(--modal-background);
+  background: var(--light-black);
   position: fixed;
   top: 0;
   left: 0;
@@ -355,7 +351,7 @@ body {
   min-height: 581px;
   top: 50%;
   left: 50%;
-  background: var(--main-background-color);
+  background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -379,14 +375,14 @@ body {
 }
 .nav-g:hover,
 .address-g:hover {
-  color: var(--active-color);
+  color: var(--blue);
 }
 .address:focus,
 .address-g:focus {
-  color: var(--active-color);
+  color: var(--blue);
 }
 .contacts {
-  color: var(--sub-text-color);
+  color: var(--light-grey);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
@@ -405,7 +401,7 @@ body {
   line-height: 28px;
   letter-spacing: 0.03em;
   padding: 63px 24px 91px 24px;
-  color: var(--main-background-color);
+  color: var(--white);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition-property: transform;
@@ -438,7 +434,7 @@ body {
 .header-icon-link {
   display: flex;
   align-items: center;
-  color: var(--adress-g);
+  color: var(--grey);
   cursor: pointer;
   transition-property: color;
   transition-duration: 250ms;
@@ -455,15 +451,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 200px 0;
-  background-color: var(--mu-hero);
+  background-color: var(--dark-navy-blue);
   background-size: auto;
   margin: 0 auto;
 }
 
 .hero-button {
   font-family: Roboto, sans-serif;
-  background-color: var(--active-color);
-  color: var(--main-background-color);
+  background-color: var(--blue);
+  color: var(--white);
   font-weight: 700;
   line-height: 1.8;
   display: flex;
@@ -482,7 +478,7 @@ body {
   align-items: center;
   width: 270px;
   height: 120px;
-  background: var(--team-backgraund);
+  background: var(--light-cream);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -503,21 +499,21 @@ body {
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background-color: var(--main-background-color);
-  color: var(--icon-color);
+  background-color: var(--white);
+  color: var(--slightly-grey);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-icons:hover,
 .socials-icons:focus {
-  fill: var(--main-background-color);
+  fill: var(--white);
 }
 .socials-icons {
   fill: currentColor;
 }
 .group-heading {
-  color: var(--main-color);
+  color: var(--dark-black);
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
@@ -531,7 +527,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
-  background-color: var(--main-background-color);
+  background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -545,7 +541,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--adress-g);
+  color: var(--grey);
 }
 .team-container {
   display: flex;
@@ -584,9 +580,9 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--icon-color);
+  border: 1px solid var(--slightly-grey);
   border-radius: 4px;
-  color: var(--icon-color);
+  color: var(--slightly-grey);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -604,18 +600,18 @@ body {
 }
 .socials-link:focus,
 .socials-link:hover {
-  background-color: var(--focus-hover-background-color);
-  color: var(--focus-hover-color-button);
+  background-color: var(--blue);
+  color: var(--white);
 }
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-  background-color: var(--active-color);
+  background-color: var(--blue);
 }
 .footer-socials-icon {
   fill: currentColor;
 }
 .clients-link:hover .clients-link use {
-  fill: var(--active-color);
+  fill: var(--blue);
 }
 .footer-socials-link {
   display: flex;
@@ -625,7 +621,7 @@ body {
   width: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--main-background-color);
+  color: var(--white);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -636,7 +632,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: var(--white);
   margin-top: 15px;
 }
 .footer-socials-list {
@@ -647,8 +643,8 @@ body {
 }
 .clients-link:focus,
 .clients-link:hover {
-  border: 1px solid var(--active-color);
-  color: var(--active-color);
+  border: 1px solid var(--blue);
+  color: var(--blue);
 }
 .section-heading {
   font-size: 36px;
@@ -661,7 +657,7 @@ body {
 }
 
 .clients-icon:hover {
-  color: var(--active-color);
+  color: var(--blue);
 }
 .section-heading-team {
   display: flex;
@@ -678,14 +674,14 @@ body {
   margin-bottom: 50px;
 }
 .section-team {
-  background-color: var(--team-backgraund);
+  background-color: var(--light-cream);
 }
 
 .team-name {
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
-  color: var(--main-color);
+  color: var(--dark-black);
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
@@ -697,12 +693,12 @@ body {
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--adress-g);
+  color: var(--grey);
 }
 
 .filter-button {
   font-family: Roboto, sans-serif;
-  background-color: var(--team-backgraund);
+  background-color: var(--light-cream);
   padding: 6px 26px;
   border: none;
   cursor: pointer;
@@ -728,7 +724,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  color: var(--adress-g);
+  color: var(--grey);
 }
 .address {
   font-style: normal;
@@ -736,7 +732,7 @@ body {
 
 .footer {
   display: flex;
-  background-color: var(--mu-hero);
+  background-color: var(--dark-navy-blue);
   padding: 60px 0;
 }
 .save-newsletter {
@@ -744,13 +740,13 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
-  color: var(--main-background-color);
+  color: var(--white);
   padding-top: 0;
 }
 
 .address {
   display: flex;
-  color: var(--sub-text-color);
+  color: var(--light-grey);
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -758,7 +754,7 @@ body {
   letter-spacing: 0.03em;
 }
 .address-w {
-  color: var(--main-background-color);
+  color: var(--white);
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -788,19 +784,19 @@ body {
   border-radius: 4px;
   margin: 0px;
 
-  background-color: var(--mu-hero);
+  background-color: var(--dark-navy-blue);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   padding-left: 16px;
-  color: var(--main-background-color);
+  color: var(--white);
   outline: none;
 }
 .frame-newsletter::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: var(--newsletter-color-font);
+  color: var(--light-grey);
   padding-left: 16px;
 }
 .btn-newsletter {
@@ -811,17 +807,17 @@ body {
   padding: 0;
   width: 200px;
   height: 50px;
-  background-color: var(--focus-hover-background-color);
-  border: 2px solid var(--focus-hover-background-color);
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  color: var(--main-background-color);
+  color: var(--white);
   box-shadow: 0px 4px 4px var(--shadow-teamat);
 }
 .icon-newsletter {
-  fill: var(--main-background-color);
+  fill: var(--white);
   transition: transform var(--transition-active);
 }
 .btn-newsletter:hover {
@@ -859,7 +855,7 @@ body {
 }
 .projects-item {
   gap: 30px;
-  background: var(--main-background-color);
+  background: var(--white);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -905,25 +901,25 @@ body {
 
   font-size: 12px;
   line-height: 1.172;
-  color: var(--adress-g);
+  color: var(--grey);
   position: relative;
   gap: 2px;
 }
 .input-icon-focus:focus-within > input,
 .input-icon-focus:focus-within > svg {
-  border-color: var(--focus-hover-background-color);
-  fill: var(--focus-hover-background-color);
+  border-color: var(--blue);
+  fill: var(--blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-modal {
   position: absolute;
   top: 30px;
   left: 12px;
-  fill: var(--main-color);
+  fill: var(--dark-black);
 }
 .icon-modal:hover,
 .icon-modal:focus {
-  fill: var(--focus-hover-background-color);
+  fill: var(--blue);
 }
 .input-modal {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -958,7 +954,7 @@ body {
 }
 
 .text-modal:focus {
-  border: 1px solid var(--focus-hover-background-color);
+  border: 1px solid var(--blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-div {
@@ -1008,23 +1004,23 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active-blue:focus > .box-icon-foot {
-  background-color: var(--active-color);
-  fill: var(--main-background-color);
+  background-color: var(--blue);
+  fill: var(--white);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active-blue:focus,
 .active-blue:hover,
 .active-blue:active {
-  color: var(--focus-hover-background-color);
+  color: var(--blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .active-blue:focus > .icon-client {
-  border-color: var(--focus-hover-background-color);
-  fill: var(--focus-hover-background-color);
+  border-color: var(--blue);
+  fill: var(--blue);
 }
 .link-modal {
-  color: var(--focus-hover-background-color);
+  color: var(--blue);
   cursor: pointer;
 }
 .btn-modal-form {
@@ -1035,13 +1031,13 @@ body {
   padding: 0px;
   width: 200px;
   height: 50px;
-  background-color: var(--focus-hover-background-color);
+  background-color: var(--blue);
   border: 0px;
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.87;
   font-weight: 700;
-  color: var(--main-background-color);
+  color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .btn-modal-form:hover,
