@@ -1,10 +1,105 @@
-.container {
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  margin-left: 97px;
+}
+.nav-contacts {
+  display: flex;
+}
+.header-contact {
+  display: block;
+  margin: 32px 0 31px 0;
+}
+.header-contact:not(:last-child) {
+  margin-right: 50px;
+}
+.address-g:hover {
+  color: $blue;
+}
+.address:focus,
+.address-g:focus {
+  color: $blue;
+}
+.current-link:focus,
+.current-link:hover {
+  color: $blue;
+}
+.navbar-item {
+  display: block;
+  padding: 32px 0 31px 0;
+}
+.navbar-space:not(:last-child) {
+  margin-right: 46px;
+}
+.navbar-link:focus {
+  color: $blue;
+}
+
+.navbar-link {
+  padding: 32px 0 31px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-link:hover,
+.contacts:hover {
+  color: $blue;
+}
+.navbar-linkss {
+  position: relative;
+  color: $blue;
+}
+
+.navbar-linkss::after {
+  content: "";
+  position: absolute;
+  display: block;
   width: 100%;
-  .title {
-    color: $blue;
-  }
-  .produkt {
-    height: 100%;
-    color: #000000;
-  }
+  height: 4px;
+  background-color: $blue;
+  border-radius: 2px;
+  bottom: 0;
+}
+.address-g {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-icon-link:hover use {
+  fill: $blue;
+}
+.header-icon-link:focus use {
+  fill: $blue;
+}
+.header-icon-link {
+  display: flex;
+  align-items: center;
+  color: $grey;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-icons {
+  fill: currentColor;
+  margin-right: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link {
+  text-decoration: none;
+  color: inherit;
 }
