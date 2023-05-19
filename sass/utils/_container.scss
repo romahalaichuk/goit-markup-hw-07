@@ -6,9 +6,13 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  &_.container-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+}
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  border-bottom: 1px solid;
+  color: $dark-black;
 }
