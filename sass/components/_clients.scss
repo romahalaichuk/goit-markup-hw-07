@@ -1,0 +1,45 @@
+.section-heading {
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.heads-clients {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $slightly-grey;
+  border-radius: 4px;
+  color: $slightly-grey;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-link:hover .clients-link use {
+  fill: $blue;
+}
+.clients-link:focus,
+.clients-link:hover {
+  border: 1px solid $blue;
+  color: $blue;
+}
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-icon:hover {
+  color: $blue;
+}

@@ -23,7 +23,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--dark-black);
+  color: $dark-black;
 }
 img {
   display: block;
@@ -42,7 +42,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white);
+  color: $white;
   margin-bottom: 30px;
 }
 :focus {
@@ -52,7 +52,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
-  color: var(--dark-black);
+  color: $dark-black;
   font-size: var(--main-font-size);
-  background-color: var(--white);
+  background-color: $white;
 }
