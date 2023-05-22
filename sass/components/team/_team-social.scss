@@ -3,10 +3,11 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
-.socials-item:not(:last-child) {
-  margin-right: 10px;
-}
+
 .socials-link {
   display: flex;
   justify-content: center;
@@ -19,16 +20,15 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:is(:hover, :focus) {
+    background-color: $blue;
+    color: $white;
+  }
 }
-.socials-link:focus,
-.socials-link:hover {
-  background-color: $blue;
-  color: $white;
-}
-.socials-icons:hover,
-.socials-icons:focus {
-  fill: $white;
-}
+
 .socials-icons {
   fill: currentColor;
+  &:is(:hover, :focus) {
+    fill: $white;
+  }
 }
