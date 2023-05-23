@@ -15,3 +15,12 @@
 .header {
   border-bottom: 1px solid $dark-cream;
 }
+.footer {
+  display: flex;
+  background-color: $dark-navy-blue;
+  padding: 60px 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: flex-start;
+}
