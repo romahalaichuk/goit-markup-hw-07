@@ -1,4 +1,4 @@
-.socials-list {
+.team__socials-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
   }
 }
 
-.socials-link {
+.team__socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@
   }
 }
 
-.socials-icons {
+.team__socials-icons {
   fill: currentColor;
   &:is(:hover, :focus) {
     fill: $white;
