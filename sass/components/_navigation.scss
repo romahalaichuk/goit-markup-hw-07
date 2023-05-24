@@ -1,4 +1,4 @@
-.navbar-header {
+.header__navbar {
   display: flex;
   align-items: center;
 }
@@ -6,59 +6,31 @@
   display: flex;
   margin-left: 97px;
 }
-.nav-contacts {
-  display: flex;
-}
-.header-contact {
-  display: block;
-  margin: 32px 0 31px 0;
-}
-.header-contact:not(:last-child) {
-  margin-right: 50px;
-}
-.address-g:hover {
-  color: $blue;
-}
-.address:focus,
-.address-g:focus {
-  color: $blue;
-}
-.current-link:focus,
-.current-link:hover {
-  color: $blue;
-}
-.navbar-item {
+
+.navbar__item {
   display: block;
   padding: 32px 0 31px 0;
-}
-.navbar-space:not(:last-child) {
   margin-right: 46px;
 }
-.navbar-link:focus {
-  color: $blue;
-}
 
-.navbar-link {
+.navbar__link {
   padding: 32px 0 31px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition-active;
+  &:is(:hover, :focus) {
+    color: $blue;
+  }
 }
-
-.navbar-link:hover,
-.contacts:hover {
-  color: $blue;
-}
-.navbar-linkss {
+.navbar__underscore {
   position: relative;
   color: $blue;
 }
 
-.navbar-linkss::after {
+.navbar__underscore::after {
   content: "";
   position: absolute;
   display: block;
@@ -68,34 +40,40 @@
   border-radius: 2px;
   bottom: 0;
 }
-.address-g {
+.nav__address-g {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition-active;
+  &:is(:hover, :focus) {
+    color: $blue;
+  }
 }
-.header-icon-link:hover use {
-  fill: $blue;
+
+.nav__contacts {
+  display: flex;
+
+  .header__contact {
+    margin: 32px 0 31px 0;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
-.header-icon-link:focus use {
-  fill: $blue;
-}
-.header-icon-link {
+.nav__icon-link {
   display: flex;
   align-items: center;
   color: $grey;
   cursor: pointer;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-icons {
-  fill: currentColor;
-  margin-right: 10px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition-active;
+  &:is(:hover use, :focus use) {
+    fill: $blue;
+  }
+  .nav__icons {
+    fill: currentColor;
+    margin-right: 10px;
+  }
 }
