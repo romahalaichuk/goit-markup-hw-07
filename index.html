@@ -504,24 +504,28 @@
     <!--Modal-->
     <div class="backdrop is-hidden" data-modal>
       <div class="hero__modal-box">
-        <button class="modal-close" data-modal-close>
+        <button class="hero__modal-close" data-modal-close>
           <svg width="18" height="18">
             <use href="./images/icons.svg#icon-close-icon"></use>
           </svg>
         </button>
-        <form class="form-order">
-          <div class="modal-forms" role="group" aria-labelledby="order-form">
-            <h3 class="title-modal" id="order-form">
+        <form class="hero__form-order">
+          <div
+            class="hero__modal-forms"
+            role="group"
+            aria-labelledby="order-form"
+          >
+            <h3 class="hero__title-modal" id="order-form">
               Zostaw swoje dane w formularzu poniżej
             </h3>
-            <div class="modal-forms">
-              <label for="name" class="label-modal">Imie </label>
-              <div class="input-icon-focus">
-                <svg class="icon-modal" width="13" height="13">
+            <div class="hero__modal-forms">
+              <label for="name" class="hero__label-modal">Imie </label>
+              <div class="hero__input-icon-focus">
+                <svg class="hero__icon-modal" width="13" height="13">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
                 <input
-                  class="input-modal"
+                  class="hero__input-modal"
                   id="name"
                   name="user-name"
                   type="text"
@@ -529,15 +533,15 @@
                 />
               </div>
             </div>
-            <div class="modal-forms">
-              <label for="telephon" class="label-modal">Telefon</label>
-              <div class="input-icon-focus">
-                <svg class="icon-modal" width="13" height="13">
+            <div class="hero__modal-forms">
+              <label for="telephon" class="hero__label-modal">Telefon</label>
+              <div class="hero__input-icon-focus">
+                <svg class="hero__icon-modal" width="13" height="13">
                   <use href="./images/icons.svg#icon-tel"></use>
                 </svg>
 
                 <input
-                  class="input-modal"
+                  class="hero__input-modal"
                   id="telephon"
                   name="phone_number"
                   type="tel"
@@ -545,15 +549,15 @@
                 />
               </div>
             </div>
-            <div class="modal-forms">
-              <label for="user-email" class="label-modal">E-mail</label>
-              <div class="input-icon-focus">
-                <svg class="icon-modal" width="13" height="13">
+            <div class="hero__modal-forms">
+              <label for="user-email" class="hero__label-modal">E-mail</label>
+              <div class="hero__input-icon-focus">
+                <svg class="hero__icon-modal" width="13" height="13">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
 
                 <input
-                  class="input-modal"
+                  class="hero__input-modal"
                   id="user-email"
                   name="email"
                   type="email"
@@ -561,10 +565,10 @@
                 />
               </div>
             </div>
-            <div class="modal-forms">
-              <label for="comment" class="label-modal">Komentarz </label>
+            <div class="hero__modal-forms">
+              <label for="comment" class="hero__label-modal">Komentarz </label>
               <textarea
-                class="text-modal"
+                class="hero__text-modal"
                 id="comment"
                 name="comment"
                 rows="8"
@@ -572,25 +576,25 @@
               ></textarea>
             </div>
           </div>
-          <div class="check-div">
+          <div class="hero__check-div">
             <input
-              class="check-modal"
+              class="hero__check-modal"
               type="checkbox"
-              id="checkbox"
+              id="hero__check-box"
               name="declare"
               required
             />
-            <label for="checkbox" class="checkbox"
+            <label for="hero__check-box" class="hero__check-box"
               >Oświadczam iż akceptuję
-              <a class="active-blue link-modal" href="https://www.google.pl/">
+              <a class="hero__link-modal" href="https://www.google.pl/">
                 Regulamin</a
               >
-              i<a class="active-blue link-modal" href="https://www.google.pl/">
+              i<a class="hero__link-modal" href="https://www.google.pl/">
                 Politykę Prywatności.</a
               ></label
             >
           </div>
-          <button type="submit" class="btn-modal-form">Wyślij</button>
+          <button type="submit" class="hero__btn-modal-form">Wyślij</button>
         </form>
       </div>
     </div>
